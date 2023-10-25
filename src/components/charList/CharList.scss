@@ -1,0 +1,93 @@
+@import "../../styles/vars.scss";
+
+.charList {
+
+    &__wrapper {
+        max-width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+
+        max-width: 675px;
+        width: 100%;
+
+        gap: 30px 25px;
+        padding-bottom: 45px;
+    }
+
+    &__item {
+        max-width: 200px;
+        height: 318px;
+        background-color: $dark-green;
+
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+            transform: translateY(-7px);
+        }
+    }
+
+    &__img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    &__name {
+        display: block;
+        padding: 15px;
+
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+
+    &__btn {
+        width: 170px !important;
+
+        align-self: center; 
+
+        &:disabled{
+            cursor: no-drop;
+            background-color: #c4c4c4 !important;
+        }
+    }
+}
+
+.sceleton {
+
+    width: 675px;
+    margin-bottom: 45px;
+
+    &__inner {
+
+        max-width: 675px;
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 30px 25px;
+
+
+    }
+
+    &__item {
+        max-width: 200px;
+        width: 100%;
+        height: 318px;
+
+        background-color: #d1d1d1;
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+
+        background: linear-gradient(0deg, #929292, transparent);
+    }
+}

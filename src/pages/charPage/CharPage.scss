@@ -1,0 +1,42 @@
+@import '../../styles/vars.scss';
+
+.char {
+
+    &__wrapper {
+        display: flex;
+
+    }
+
+    // .char__img
+
+    &__img {
+        width: 239px;
+        height: 239px;
+
+        object-fit: cover;
+    }
+
+    // .char__inner
+
+    &__inner {
+        padding-left: 50px;
+    }
+
+    // .char__name
+
+    &__name {
+        font-size: 22px;
+        font-weight: 700;
+
+        padding-bottom: 25px;
+    }
+
+    // .char__description
+
+    &__description {
+        max-width: 550px;
+
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+@import './styles/vars.scss';
+
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+* {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    color: #000;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0; 
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.container {
+    padding: 0 calc(50% - 550px);
+}
+
+.btn {
+    width: 100px;
+    padding: 11px 18px;
+
+    color: #FFF;
+    background-color: $grey;
+
+    border: none;
+
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+
+    position: relative;
+
+    &::before,
+    &::after {
+        content: '';
+        width: 10px;
+        height: 20px;
+
+        z-index: 1;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        left: -6px;
+        transform: rotateZ(45deg);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        right: -6px;
+        transform: rotateZ(45deg);
+    }
+
+}
+
+.btn.red {
+    background-color: $red;
+}
+
+.btn.whiteBG {
+
+    &::before,
+    &::after {
+        content: '';
+        background-color: #fff;
+    }
+}
+
+.btn.greenBG {
+
+    &::before,
+    &::after {
+        content: '';
+        background-color: $dark-green;
+    }
+}

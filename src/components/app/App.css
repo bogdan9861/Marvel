@@ -1,0 +1,21 @@
+.CharList-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.charInfo-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.app{
+    position: relative;
+}
+
+.app_decoration{
+    position: absolute;
+    bottom: 0;
+    left: 56vw;
+
+    z-index: -2;
+}   
